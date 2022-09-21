@@ -1,4 +1,3 @@
-'use strict'
 const express = require('express');
 const {errorHandler} = require('./milddleware/errorMiddleware')
 const dotenv = require('dotenv').config();
