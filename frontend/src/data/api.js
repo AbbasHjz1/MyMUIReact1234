@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const apiUrl = 'http://localhost:5000/api/'
+const apiUrl = '/api/'
 
 export const uploadItem = async (data,option) => {
     try {
