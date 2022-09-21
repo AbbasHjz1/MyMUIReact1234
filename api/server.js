@@ -1,19 +1,16 @@
-'use strict'
 const express = require('express');
 const {errorHandler} = require('./milddleware/errorMiddleware')
 const dotenv = require('dotenv').config();
 const colors = require('colors')
 const connectDB = require('./config/db')
-const cors = require('cors')
 const bodyParser = require('body-parser'); 
 const path = require('path');
 const fileRoutes = require('./routes/fils-upload-routes')
 
 const port = process.env.PORT || 5000;
-connectDB()
+connectDB() 
 
 const app = express()
-app.use(cors());
 app.use(bodyParser.json()); 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/api', fileRoutes.routes);
