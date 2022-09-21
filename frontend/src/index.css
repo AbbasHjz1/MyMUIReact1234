@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.iconHover {
+  cursor: pointer;
+}
+
+.miniMizeWidth {
+  width: 10%;
+}
+.scale{
+  transform: scale(1.5);
+}
+
+.toScale{
+  transform: scale(1.6) !important;
+}
+.toScaleHome{
+  transform: scale(1.2) translateY(-2px) !important;
+}
+
+.hov:hover{
+  cursor: pointer;
+}
+.disnone{
+  all: unset
+}
