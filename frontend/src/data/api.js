@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const API_URL = '/api/'
 
+
 export const uploadItem = async (data,option) => {
     try {
         await axios.post(`${API_URL}addItem`, data, option)

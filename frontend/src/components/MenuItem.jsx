@@ -48,7 +48,7 @@ useEffect(() => {
         <CardMedia
           component="img"
           height="500"
-          image= {`http://localhost:5000/${newPath}`}
+          image= {newPath}
           alt="green iguana"
           />
         <CardContent>

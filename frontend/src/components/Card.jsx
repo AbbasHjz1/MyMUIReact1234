@@ -28,7 +28,7 @@ const Card = ({ updateLocalForAll }) => {
     let keys = Object.keys(localStorage)
     var values = [],
       i = keys.length;
-
+    console.log(values)
     while (i--) {
       values.push(JSON.parse(localStorage.getItem(keys[i])));
     }
