@@ -12,6 +12,7 @@ import { Fab, Tooltip } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { cyan } from '@mui/material/colors';
 import Footer from './Footer';
+import Spinner from './Spinner';
 const theme = createTheme({
     palette: {
         primary: {
@@ -60,7 +61,12 @@ const DashBoard = ({ updateLocalForAll }) => {
     useEffect(() => {
         getData()
         setBadgeNumber(localStorage)
+
     }, [])
+    if (dataFetched.length === 0) {
+        return <Spinner />
+     }
+    
     return (
         <>
             <Tabz filterItems={filterItems} />
