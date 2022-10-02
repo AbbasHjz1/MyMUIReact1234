@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'backend/item'
+const API_URL = '/backend/item'
 
 export const getItem = async() => {
     try {
