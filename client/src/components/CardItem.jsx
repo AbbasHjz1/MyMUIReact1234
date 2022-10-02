@@ -5,7 +5,7 @@ const CardItem = ({ item, deleteFromLocal, updateMyLocal, updateLocalForAll }) =
   const [pathImage, setPathImage] = useState('')
   const [qty, setQty] = useState(quantity)
   useEffect(() => {
-    let api = "api\\"
+    let api = "backend\\"
     const pathes = item.file.filePath.replace(api, '')
     setPathImage(pathes)
   }, [])
