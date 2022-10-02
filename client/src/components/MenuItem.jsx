@@ -45,7 +45,7 @@ useEffect(() => {
       <>
          <Grid  item key={_id}   xs={12} sm={6} md={4} lg={4} xl={3}>
        <div>
-       <Card sx={{ width:'100%', margin:'auto' ,maxWidth:300, maxHeight: 600, mx: "auto",minHeight:{xs:0, sm:300,md:300, lg:300,xl:300},display:"flex",flexDirection:"column",justifyContent:"space-between" }} >
+       <Card sx={{ width:'100%', margin:'auto' ,maxWidth:300, maxHeight: 770, mx: "auto",minHeight:{xs:0, sm:300,md:300, lg:300,xl:300},display:"flex",flexDirection:"column",justifyContent:"space-between" }} >
       <CardActionArea> 
         <CardMedia style={{padding:"10px"}}
           component="img"
