@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'https://gustosamenu.herokuapp.com/backend/item'
+const API_URL = 'https://localhost:5000/backend/item'
 
 export const getItem = async() => {
     try {
